@@ -21,9 +21,13 @@ class Starter extends React.Component {
     alert("hax!");
   }
 
+  clicked(_ev) {
+    alert("clicked");
+  }
+
   render() {
-    let button = <div className="column" onMouseMove={this.swap.bind(this)}>
-      <p><button onClick={this.hax.bind(this)}>Click Me</button></p>
+    let button = <div className="column" onMouseClick={this.swap.bind(this)}>
+      <p><button onClick={this.clicked.bind(this)}></button></p>
     </div>;
 
     let blank = <div className="column">

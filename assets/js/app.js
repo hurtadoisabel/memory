@@ -19,6 +19,17 @@ import $ from "jquery";
 
 import game_init from "./starter-game";
 
+// I DON'T KNOW IF I HAVE TO ADD THIS
+
+//window.addEventListener("load", (_ev) => {
+  // let root = document.getElementById('root');
+  // if (root) {
+	//game_init(root);
+  // }
+//});
+
+
+
 $(() => {
   let root = $('#root')[0];
   game_init(root);
