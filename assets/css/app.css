@@ -2,8 +2,44 @@
 
 @import "~milligram/dist/milligram";
 
-.column > p {
-    padding-top: 10ex;
-    text-align: center;
+p {
+   font-size: 32px;
+   font-weight: 400;
+   text-align: center;
 }
 
+
+.col-3 {
+    width: 25%;
+}
+
+.square-border{
+   box-sizing: border-box;
+   color: black;
+   margin: 20px;
+
+}
+
+.square {
+   height: 96px;
+   width: 96px;
+   background-color: grey;
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-bottom: 16px;
+   padding-top: 16px;
+}
+
+div {
+   display:block;
+}
+
+.row {
+   flex-wrap: wrap;
+   text-align: left;
+   
+}
+
+.hidden {
+   visibility: hidden;
+}

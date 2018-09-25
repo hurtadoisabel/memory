@@ -9,43 +9,179 @@ export default function game_init(root) {
 class Starter extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { left: false };
   }
 
-  swap(_ev) {
-    let state1 = _.assign({}, this.state, { left: !this.state.left });
-    this.setState(state1);
-  }
-
-  hax(_ev) {
-    alert("hax!");
-  }
-
-  clicked(_ev) {
-    alert("clicked");
-  }
 
   render() {
-    let button = <div className="column" onMouseClick={this.swap.bind(this)}>
-      <p><button onClick={this.clicked.bind(this)}></button></p>
-    </div>;
 
-    let blank = <div className="column">
-      <p>Nothing here.</p>
-    </div>;
+    let a1 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
 
-    if (this.state.left) {
-      return <div className="row">
-        {button}
-        {blank}
-      </div>;
-    }
-    else {
-      return <div className="row">
-        {blank}
-        {button}
-      </div>;
-    }
+    let a2 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let a3 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let a4 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let b1 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let b2 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let b3 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+    
+    let b4 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let c1 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let c2 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let c3 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let c4 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let d1 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let d2 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let d3 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+    let d4 =
+<div className = "col-3">
+   <div className = "square-border">
+	<div className = "square">
+	   <p>?</p>
+	</div>
+   </div>
+</div>;
+
+   
+     return <div className="row">
+       
+	{a1}
+	{a2}
+	{a3}
+	{a4}
+	{b1}
+        {b2}
+        {b3}        
+        {b4}
+        {c1}
+        {c2}
+        {c3}
+        {c4}
+        {d1}
+        {d2}
+        {d3}
+        {d4}
+
+	
+     </div>;
+
+
   }
 }
 
