@@ -2,33 +2,37 @@
 
 @import "~milligram/dist/milligram";
 
-p {
-   font-size: 32px;
-   font-weight: 400;
+button {
+   font-size: 40px;
+   font-weight: 350;
    text-align: center;
+   border-radius: 8px;
+   height: 70px;
+   width: 170px;
 }
 
+#restart {
+   font-size: 20px;
+   font-weight: 350;
+   text-align: center;
+   height: 60px;
+   width: 140px;
+   
+}
 
 .col-3 {
     width: 25%;
 }
 
-.square-border{
-   box-sizing: border-box;
+.col-6 {
+    width: 50%;
+}
+
+.card{
    color: black;
-   margin: 20px;
-
+   
 }
 
-.square {
-   height: 96px;
-   width: 96px;
-   background-color: grey;
-   padding-left: 16px;
-   padding-right: 16px;
-   padding-bottom: 16px;
-   padding-top: 16px;
-}
 
 div {
    display:block;
@@ -36,10 +40,19 @@ div {
 
 .row {
    flex-wrap: wrap;
-   text-align: left;
-   
+   text-align: left; 
 }
 
-.hidden {
-   visibility: hidden;
+#score {
+   
+   display: flex;
 }
+
+#restart{
+   float: right;
+  
+ 
+   display: flex;
+}
+
+
