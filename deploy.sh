@@ -18,8 +18,8 @@ mix phx.digest
 echo "Generating release..."
 mix release
 
-#echo "Stopping old copy of app, if any..."
-#_build/prod/rel/draw/bin/practice stop || true
+echo "Stopping old copy of app, if any..."
+_build/prod/rel/draw/bin/practice stop || true
 
 echo "Starting app..."
 
